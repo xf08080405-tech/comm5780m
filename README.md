@@ -1,2 +1,2 @@
 # COMM5780M
-Jingqi’s Digital Practice Portfolio
+Sylvia’s Digital Practice Portfolio
