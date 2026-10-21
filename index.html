@@ -42,14 +42,36 @@
 
     <section id="journal">
       <h2><span class="number">02</span> Weekly journal</h2>
-      <p class="note">Read by week, starting with Week 2.</p>
-      <p><a href="#week-2">Week 2: Making my first website</a></p>
+      <p class="note">Small experiments, what worked and what I learned.</p>
+      <nav class="week-links" aria-label="Journal weeks">
+        <a href="#week-2">Week 02 · Making a website</a>
+        <a href="#week-3">Week 03 · Web scraping</a>
+      </nav>
       <article id="week-2">
         <p class="label">Week 02 / 8 October 2026</p>
         <h3>Making my first website</h3>
         <p>This was my first time making a webpage. In the workshop, we tried CampusPress and learned some basic HTML and CSS. I chose GitHub Pages because I want to try changing the design myself.</p>
         <p>After class, I read the instructions carefully and practised using HTML and CSS. CampusPress has themes that are already available, while HTML and CSS let us change more things. This helped me see how different tools affect what we can make.</p>
         <p>This is my first version. I would like to try different designs and add more of my work as I learn.</p>
+      </article>
+
+      <article id="week-3">
+        <p class="label">Week 03 / 15 October 2026</p>
+        <h3>Web scraping with BBC iPlayer</h3>
+        <p class="entry-summary">Learning two scraping methods and trying Python with BBC iPlayer.</p>
+        <div class="entry-details"><span>Method: Python / Google Colab</span><span>Source: BBC iPlayer homepage</span></div>
+        <h4>What we learned this week</h4>
+        <p>This week, we learned two ways to collect information from webpages. Chris used BBC iPlayer to show how programme titles and descriptions can be saved as a dataset. He also explained how the size and position of programme cards can make some programmes easier to notice.</p>
+        <p><strong>Web Scraper extension:</strong> We learned how to create a sitemap in Chrome, add selectors and preview the selected content. The tool can first find each programme card, then find the title inside it. The results can be exported as a CSV file.</p>
+        <p><strong>Python and Google Colab:</strong> We also learned how to run a Python script in a notebook. The example uses Requests to get the webpage and Beautiful Soup to find information in its HTML. It collects titles and descriptions, which can then be saved as a text or CSV file.</p>
+        <h4>What I tried</h4>
+        <p>I used the workshop’s Google Colab notebook to collect titles and descriptions from BBC iPlayer. I ran the code and checked the results. It collected 106 records, including some repeated programmes. I then opened the data in a spreadsheet.</p>
+        <figure class="dataset-figure">
+          <img src="week-3-bbc-results.png" alt="Spreadsheet of scraped BBC iPlayer records, with Title and Description columns. The description labels include programme names, categories and, for some entries, durations." width="1998" height="1248" loading="lazy">
+          <figcaption>Source: <a href="https://www.bbc.co.uk/iplayer">BBC iPlayer</a></figcaption>
+        </figure>
+        <h4>What I learned</h4>
+        <p>Both methods use the webpage’s structure to find information. We used Inspect in Chrome to look at HTML tags and class names. I learned to preview the results and check whether they match what I wanted. I also practised running the Python example in Colab and opening the results in a spreadsheet.</p>
       </article>
     </section>
 
@@ -58,8 +80,7 @@
       <article>
         <p class="label">HTML / CSS</p>
         <h3>My first portfolio website</h3>
-        <p>This website is a starting point. I plan to add my workshop experiments here as I make them.</p>
-        <p class="note">Initial code and journal draft prepared with AI assistance. I will review the writing and document my own changes.</p>
+        <p>This website is a starting point. It now includes my first website experiment and a BBC iPlayer web-scraping exercise. I will keep adding notes as I learn.</p>
       </article>
     </section>
   </main>
