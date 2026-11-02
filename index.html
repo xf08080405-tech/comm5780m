@@ -1,61 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jingqi Shao's digital media learning journal and portfolio.">
-  <title>Notes &amp; Practice | Jingqi Shao</title>
+  <title>Notes &amp; Practice — Jingqi Shao</title>
+  <meta name="description" content="Weekly notes and small projects for COMM5780M by Jingqi Shao, also known as Sylvia.">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23202523'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-size='23' fill='white'%3EJ%3C/text%3E%3C/svg%3E">
 </head>
-<body>
+<body id="top">
   <header>
-    <a class="name" href="#home">Jingqi Shao</a>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#journal">Journal</a>
-      <a href="#work">Work</a>
-    </nav>
+    <a class="name" href="#top">Jingqi Shao</a>
+    <nav aria-label="Main navigation"><a href="#about">About</a><a href="#journal">Journal</a><a href="#work">Work</a></nav>
   </header>
-
   <main>
-    <section id="home" class="intro">
+    <section class="intro" aria-labelledby="page-title">
       <p class="label">COMM5780M / Digital Practices / 2026/27</p>
-      <h1>Notes &amp; Practice</h1>
+      <h1 id="page-title">Notes &amp; Practice</h1>
       <p class="introduction">I’m Jingqi, also known as Sylvia. I have a background in public art and I’m now learning about digital media. Here, I share my weekly notes, small projects and ideas as I practise making webpages.</p>
       <p class="note">Notes, experiments and things I’m still figuring out.</p>
     </section>
-
-
-    <section id="about"><h2><span class="number">01</span> About me</h2><div class="about-copy"><div>
-      
+    <section id="about">
+      <h2>About me</h2>
       <p>I’m studying MA Digital Media at the University of Leeds. I’m interested in visual design and interaction. I have used SketchUp and Lumion for spatial design, and TouchDesigner for digital creative work. I’m now learning HTML and CSS.</p>
       <p>I also enjoy Formula 1. I wanted a small detail from that interest to appear here, so I chose five red circles, inspired by the lights at the start of a race.</p>
-      <div class="lights" aria-label="Five red circles inspired by Formula 1 starting lights">
-        <span></span><span></span><span></span><span></span><span></span>
-      </div>
-    </div></div><figure class="race-photo">
-      <img src="race-september-2026.jpg" alt="Several Formula 1 cars racing through a corner at Baku in September 2026" width="3543" height="2026">
-      <figcaption>Azerbaijan Grand Prix / 26 September 2026<br>Photo: <a href="https://commons.wikimedia.org/wiki/File:Formula_1_2026_Azerbaijan_Grand_Prix_1.jpg">President.az / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Unmodified.</figcaption>
-    </figure>
-</section>
-
+      <div class="lights" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      <figure class="race-photo">
+        <img src="race-september-2026.jpg" alt="Several Formula 1 cars racing through a corner at Baku in September 2026">
+        <figcaption>Azerbaijan Grand Prix / 26 September 2026<br>Photo: <a href="https://commons.wikimedia.org/wiki/File:Formula_1_2026_Azerbaijan_Grand_Prix_1.jpg">President.az / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · Unmodified.</figcaption>
+      </figure>
+    </section>
     <section id="journal">
-      <h2><span class="number">02</span> Weekly journal</h2>
-      <p class="note">Small experiments, what worked and what I learned.</p>
-      <nav class="week-links" aria-label="Journal weeks">
-        <a href="#week-2">Week 02 · Making a website</a>
-        <a href="#week-3">Week 03 · Web scraping</a>
+      <h2>Weekly journal</h2>
+      <p>Small experiments, what worked and what I learned.</p>
+      <nav class="week-links" aria-label="Weekly entries">
+        <a href="#week-02">Week 02 · Making a website</a>
+        <a href="#week-03">Week 03 · Web scraping</a>
+        <a href="#week-04">Week 04 · Data collection</a>
+        <a href="#week-05">Week 05 · Data visualisation</a>
       </nav>
-      <article id="week-2">
+      <article id="week-02">
         <p class="label">Week 02 / 8 October 2026</p>
         <h3>Making my first website</h3>
         <p>This was my first time making a webpage. In the workshop, we tried CampusPress and learned some basic HTML and CSS. I chose GitHub Pages because I want to try changing the design myself.</p>
         <p>After class, I read the instructions carefully and practised using HTML and CSS. CampusPress has themes that are already available, while HTML and CSS let us change more things. This helped me see how different tools affect what we can make.</p>
         <p>This is my first version. I would like to try different designs and add more of my work as I learn.</p>
       </article>
-
-      <article id="week-3">
+      <article id="week-03">
         <p class="label">Week 03 / 15 October 2026</p>
         <h3>Web scraping with BBC iPlayer</h3>
         <p class="entry-summary">Learning two scraping methods and trying Python with BBC iPlayer.</p>
@@ -67,27 +57,57 @@
         <h4>What I tried</h4>
         <p>I used the workshop’s Google Colab notebook to collect titles and descriptions from BBC iPlayer. I ran the code and checked the results. It collected 106 records, including some repeated programmes. I then opened the data in a spreadsheet.</p>
         <figure class="dataset-figure">
-          <img src="week-3-bbc-results.png" alt="Spreadsheet of scraped BBC iPlayer records, with Title and Description columns. The description labels include programme names, categories and, for some entries, durations." width="1998" height="1248" loading="lazy">
-          <figcaption>Source: <a href="https://www.bbc.co.uk/iplayer">BBC iPlayer</a></figcaption>
+          <img src="week-3-bbc-results.png" loading="lazy" alt="Spreadsheet of scraped BBC iPlayer records, with Title and Description columns. The description labels include programme names, categories and, for some entries, durations.">
         </figure>
+        <p class="reference">Source: <a href="https://www.bbc.co.uk/iplayer">BBC iPlayer</a></p>
         <h4>What I learned</h4>
         <p>Both methods use the webpage’s structure to find information. We used Inspect in Chrome to look at HTML tags and class names. I learned to preview the results and check whether they match what I wanted. I also practised running the Python example in Colab and opening the results in a spreadsheet.</p>
       </article>
-    </section>
-
-    <section id="work">
-      <h2><span class="number">03</span> Work in progress</h2>
-      <article>
-        <p class="label">HTML / CSS</p>
-        <h3>My first portfolio website</h3>
-        <p>This website is a starting point. It now includes my first website experiment and a BBC iPlayer web-scraping exercise. I will keep adding notes as I learn.</p>
+      <article id="week-04">
+        <p class="label">Week 04 / 22 October 2026</p>
+        <h3>Collecting data about university AI policies</h3>
+        <p class="entry-summary">Choosing a topic and turning written guidance into categories.</p>
+        <div class="entry-details"><span>Method: Manual data collection</span><span>Sources: Official university guidance</span></div>
+        <h4>What we did this week</h4>
+        <p>Our group chose the data analysis company scenario. We wanted to explore how UK universities explain acceptable and unacceptable uses of generative AI in assessments. We first discussed our topic, ethical questions and possible gaps in the data, before deciding where to look.</p>
+        <p>We chose five universities: Oxford, Cambridge, Imperial College London, UCL and LSE. Our table includes AI brainstorming, AI grammar checking, AI-generated content, policy level and source links.</p>
+        <figure class="dataset-figure">
+          <a class="dataset-link" href="week-4-group-discussion.png" target="_blank" rel="noopener">
+            <img src="week-4-group-discussion.png" loading="lazy" alt="Group 5 classroom discussion board showing research topics, ethical considerations, data gaps, variables and initial coding ideas.">
+          </a>
+          <figcaption>Our group discussion in class: choosing a topic and planning data collection. Click the image to enlarge.</figcaption>
+        </figure>
+        <h4>My contribution</h4>
+        <p>I was responsible for Cambridge and Imperial College London. I looked for official guidance and helped classify the information. We used numerical codes for permitted, conditional, prohibited and unclear uses.</p>
+        <p>Some information was easier to find in department guidance than in general university guidance. For example, Cambridge’s Faculty of Classics discusses grammar suggestions. One Imperial source was an older Earth Science and Engineering handbook. I needed to note the department and year rather than treat these as rules for everyone.</p>
+        <h4>What I learned</h4>
+        <p>It was not always easy to put a policy into one category. A rule could depend on the department or the assignment. I learned that “unclear” does not mean “prohibited”, and that source links and short notes help explain our choices.</p>
+        <p>Our table describes the guidance we found. It does not show how students actually use AI or whether the rules work well.</p>
+        <h4>Next step</h4>
+        <p>We will check our categories together and use the group dataset in the data visualisation workshop.</p>
+      </article>
+      <article id="week-05">
+        <p class="label">Week 05 / 29 October 2026</p>
+        <h3>Exploring data visualisation</h3>
+        <p class="entry-summary">Thinking about what data can show and how to present it clearly.</p>
+        <div class="entry-details"><span>Topic: Data visualisation</span><span>Tools introduced: Excel / Tableau Public</span></div>
+        <h4>What we learned this week</h4>
+        <p>We discussed the data we collected last week and the problems we found. Our group looked at AI policies from five UK universities. We found that the wording of some policies was unclear, which made it difficult to compare them.</p>
+        <p>We also learned about data visualisation. Holly showed us how charts can make information easier to understand. We looked at examples such as bar charts, pie charts and heatmaps, and learned that different charts are useful for different questions.</p>
+        <h4>Workshop practice</h4>
+        <p>In the workshop, we explored ways to make charts using Excel. We also discussed who a visualisation is for and what we want people to understand from it. I am still learning how to choose a suitable chart for different types of data.</p>
+        <h4>What I learned</h4>
+        <p>I learned that making a chart is not just about choosing colours or making something look nice. We need to check our data first and think about what it can and cannot tell us. For our AI policy topic, an unclear policy should not be treated as a rule that prohibits AI.</p>
+        <p>I would like to practise using Excel more and try a simple visualisation of our group data.</p>
       </article>
     </section>
+    <section id="work">
+      <h2>Work in progress</h2>
+      <p class="label">HTML / CSS</p>
+      <h3>My first portfolio website</h3>
+      <p>This website is a starting point. It now includes my first website experiment, a BBC iPlayer web-scraping exercise notes on our group data-collection task, and an introduction to data visualisation. I will keep adding notes as I learn.</p>
+    </section>
   </main>
-
-  <footer>
-    <p>Jingqi Shao / Sylvia</p>
-    <a href="#home">Back to top</a>
-  </footer>
+  <footer><span>Jingqi Shao / Sylvia</span><a href="#top">Back to top</a></footer>
 </body>
 </html>
